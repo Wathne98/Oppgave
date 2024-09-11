@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" style="display: table; margin: auto; zoom: 1">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 2.2</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body style="display: table-cell; vertical-align: middle">
+    <h2><label for="txtOut">Output from Task 2.2:</label></h2>
+    <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
+      <span id="txtOut" style="white-space: nowrap"></span>
+    </div>
+    <ol>
+      <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
+      <p>
+				[Du bør bruke konstante verdier (constants) når verdien ikke skal endres gjennom programmets levetid, for eksempel verdier som PI eller konverteringsfaktorer. Variabler (let eller var) brukes derimot når verdien kan endres, for eksempel en teller i en løkke. Ikke alle verdier kan være konstante, da noen verdier må kunne endres basert på programlogikk.
+                ]
+			</p>
+      <li>How do parentheses affect the arithmetic outcome of an expression?</li>
+      <p>
+				[Parenteser endrer rekkefølgen av operasjoner i et aritmetisk uttrykk. Uten parenteser utføres operasjonene i standard matematisk rekkefølge (multiplikasjon og divisjon før addisjon og subtraksjon). Ved å bruke parenteser kan du tvinge en annen rekkefølge, slik at uttrykkene inne i parentesene evalueres først.
+                ]
+			</p>
+      <li>How do we limit floating-point numbers to a given number of decimals?</li>
+      <p>
+				[For å begrense antall desimaler i et flyttallsnummer, kan du bruke metoden `toFixed(n)`, der `n` er antall desimaler du ønsker. For eksempel vil `3.14159.toFixed(2)` gi "3.14".
+                ]
+			</p>
+      <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
+      <p>
+				[Når du sammenligner flyttall, kan det være nødvendig å sjekke om forskjellen mellom dem er innenfor en liten toleranse, fordi flyttallsverdier ikke alltid er eksakte på grunn av presisjonsbegrensninger. For eksempel: `Math.abs(12.199999 - 12.2) < 0.000001`.
+                ]
+			</p>
+      <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
+      <p>
+				[Sammenligningsoperatorer returnerer en boolsk verdi, enten `true` eller `false`. For å sjekke om en verdi er `false` eller `true`, kan du bruke en if-setning, for eksempel: `if (a > b) { /* true */ } else { /* false */ }`.
+                ]
+			</p>
+      <li>How does the Math.random() function work, and what can it be used for?</li>
+      <p>
+				[`Math.random()` returnerer et tilfeldig flyttall mellom 0 (inkludert) og 1 (ikke inkludert). Det kan brukes til å generere tilfeldige verdier innenfor et bestemt område, for eksempel ved å multiplisere resultatet med en ønsket maksverdi og deretter runde av.
+                ]
+			</p>
+      <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
+      <p>
+				[Modulusoperatoren (%) returnerer resten etter divisjon av to tall. Den er nyttig når du trenger å finne ut om et tall er delelig med et annet (f.eks., om et tall er partall eller oddetall), eller når du skal implementere sirkulære strukturer som går rundt (for eksempel indeksering i sirkulære buffere).
+                ]
+			</p>
+    </ol>
+		<script type="module" src="./task_2-2.mjs" defer></script>
+  </body>
+</html>
